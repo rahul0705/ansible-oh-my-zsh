@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  author: your name
+  author: Rahul Mohandas
   description: 
   company: your company (optional)
   # If the issue tracker for your role is not on github, uncomment the
@@ -13,7 +13,7 @@ galaxy_info:
   # - GPLv3
   # - Apache
   # - CC-BY
-  license: license (GPLv2, CC-BY, etc)
+  license: MIT
   min_ansible_version: 1.2
   #
   # Below are all platforms currently available. Just uncomment
