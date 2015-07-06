@@ -1,7 +1,9 @@
-Role Name
+[![Build Status](https://travis-ci.org/rahul0705/ansible-oh-my-zsh.svg?branch=master)](https://travis-ci.org/rahul0705/ansible-oh-my-zsh)
+
+Ansible Oh-My-Zsh
 =========
 
-A brief description of the role goes here.
+Ansible role to install and configure Oh-My-Zsh
 
 Requirements
 ------------
