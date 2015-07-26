@@ -28,4 +28,4 @@ script:
     | grep -q 'changed=0.*failed=0'
   # Test for Succuss
   - >
-    echo $SHELL | grep -q '/bin/zsh'
+    echo $SHELL
