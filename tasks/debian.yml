@@ -11,6 +11,5 @@
   with_items:
     - zsh
     - git
-    - curl
   tags:
     - dependency
