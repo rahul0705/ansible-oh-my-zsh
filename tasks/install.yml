@@ -1,0 +1,14 @@
+---
+# tasks file for install
+
+- include: debian.yml
+  when:
+    ansible_os_family: 'Debian'
+
+- name: "Download install script"
+  get_url:
+    url: https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+    dest: /tmp/install.sh
+
+- name: "Run install script"
+  shell: /tmp/install.sh
