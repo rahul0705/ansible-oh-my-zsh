@@ -13,7 +13,7 @@
 - name: "Create new zshrc"
   copy:
     src: "{{ oh_my_zsh_user_home }}/.oh-my-zsh/templates/zshrc.zsh-template"
-    dest: {{ oh_my_zsh_user_home }}/.zshrc
+    dest: "{{ oh_my_zsh_user_home }}/.zshrc"
 
 - name: "Switch to shell to zsh"
   user:
