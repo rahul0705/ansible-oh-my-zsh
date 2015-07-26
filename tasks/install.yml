@@ -9,6 +9,7 @@
   get_url:
     url: https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh
     dest: /tmp/install.sh
+    mode: a+x
 
 - name: "Run install script"
   shell: /tmp/install.sh
