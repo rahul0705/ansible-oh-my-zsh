@@ -8,13 +8,13 @@
 - name: "Install oh-my-zsh"
   git:
     repo: https://github.com/robbyrussell/oh-my-zsh
-    dest: ~/.oh-my-zsh
+    dest: {{ oh_my_zsh_user_home }}/.oh-my-zsh
 
 - name: "Create new zshrc"
   copy:
-    src: ~/.oh-my-zsh/templates/zshrc.zsh-template
-    dest: ~/.zshrc
+    src: {{ oh_my_zsh_user_home }}/.oh-my-zsh/templates/zshrc.zsh-template
+    dest: {{ oh_my_zsh_user_home }}/.zshrc
 
 - name: "Switch to shell to zsh"
-  user: name={{ ansible_ssh_user }} shell=/usr/bin/zsh
+  user: name={{ oh_my_zsh_user }} shell=/usr/bin/zsh
   sudo: yes
