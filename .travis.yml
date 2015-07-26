@@ -27,3 +27,5 @@ script:
     --sudo
     | grep -q 'changed=0.*failed=0'
   # Test for Succuss
+  - >
+    echo $SHELL | grep -q 'zsh'
