@@ -18,5 +18,5 @@
 - name: "Switch to shell to zsh"
   user:
     name: "{{ oh_my_zsh_user }}"
-    shell: /usr/bin/zsh
+    shell: /bin/zsh
   sudo: yes
