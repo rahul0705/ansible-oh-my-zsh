@@ -5,11 +5,16 @@
   when:
     ansible_os_family: 'Debian'
 
-- name: "Download install script"
-  get_url:
-    url: https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh
-    dest: /tmp/install.sh
-    mode: a+x
+- name: "Install oh-my-zsh"
+  git:
+    repo: https://github.com/robbyrussell/oh-my-zsh
+    dest: ~/.oh-my-zsh
 
-- name: "Run install script"
-  shell: /tmp/install.sh
+- name: "Create new zshrc"
+  copy:
+    src: ~/.oh-my-zsh/templates/zshrc.zsh-template
+    dest: ~/.zshrc
+
+- name: "Switch to shell to zsh"
+  user: name={{ ansible_ssh_user }} shell=/usr/bin/zsh
+  sudo: yes
