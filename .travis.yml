@@ -28,4 +28,9 @@ script:
     | grep -q 'changed=0.*failed=0'
   # Test for Succuss
   - >
-    getent passwd $USER
+    which zsh
+  # Test for Succuss
+  - >
+    getent passwd $USER | grep -q '/bin/zsh'
+  - >
+    zsh --version
