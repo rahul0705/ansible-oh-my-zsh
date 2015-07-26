@@ -1,2 +1,4 @@
 ---
 # tasks file for ansible-oh-my-zsh
+
+- include: install.yml

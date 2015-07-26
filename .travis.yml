@@ -27,3 +27,7 @@ script:
     --sudo
     | grep -q 'changed=0.*failed=0'
   # Test for Succuss
+  - >
+    getent passwd $USER | grep -q '/usr/bin/zsh'
+  - >
+    zsh --version > /dev/null
