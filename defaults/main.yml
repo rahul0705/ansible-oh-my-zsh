@@ -2,4 +2,4 @@
 # defaults file for ansible-oh-my-zsh
 
 oh_my_zsh_user: "{{ ansible_ssh_user }}"
-oh_my_zsh_user_home: ~{{ user }}
+oh_my_zsh_user_home: ~{{ oh_my_zsh_user }}
