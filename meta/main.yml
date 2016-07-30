@@ -1,48 +1,15 @@
 ---
 galaxy_info:
-  author: Rahul Mohandas
-  description: Installs and configures oh-my-zsh
+  author: "Rahul Mohandas"
+  description: Installs and configures rTorrent
   license: MIT
-  min_ansible_version: 1.2
+  min_ansible_version: 1.4.4
   platforms:
-  #- name: EL
-  #  versions:
-  #  - all
-  #  - 5
-  #  - 6
-  #  - 7
-  #- name: Fedora
-  #  versions:
-  #  - all
-  #  - 16
-  #  - 17
-  #  - 18
-  #  - 19
-  #  - 20
-  #  - 21
-  #  - 22
-  - name: Ubuntu
-    versions:
-    - all
-    - lucid
-    - maverick
-    - natty
-    - oneiric
-    - precise
-    - quantal
-    - raring
-    - saucy
-    - trusty
-    - utopic
-    - vivid
-  - name: Debian
-    versions:
-    - all
-    - etch
-    - jessie
-    - lenny
-    - squeeze
-    - wheezy
-  categories:
-  - system
+    - name: Ubuntu
+      versions:
+      - all
+    - name: Debian
+      versions:
+      - all
+  galaxy_tags: [system]
 dependencies: []
