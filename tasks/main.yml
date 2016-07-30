@@ -29,6 +29,5 @@
   user:
     name: "{{ oh_my_zsh_user }}"
     shell: /usr/bin/zsh
-  sudo: yes
   tags:
     - configure
