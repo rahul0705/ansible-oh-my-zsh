@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/rahul0705/ansible-oh-my-zsh.svg?branch=master)](https://travis-ci.org/rahul0705/ansible-oh-my-zsh)
+[![Build Status](https://travis-ci.org/rahul0705/ansible-oh-my-zsh.svg?branch=develop)](https://travis-ci.org/rahul0705/ansible-oh-my-zsh)
 
 Ansible Oh-My-Zsh
 =========
