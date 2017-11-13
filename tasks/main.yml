@@ -1,7 +1,7 @@
 ---
 # tasks file for ansible-oh-my-zsh
 
-- name: Install ZSH
+- name: Install zsh
   package:
     name: "{{ item }}"
     state: present
@@ -11,21 +11,21 @@
   tags:
     - dependency
 
-- name: "Install oh-my-zsh"
+- name: Install oh my zsh
   git:
     repo: https://github.com/robbyrussell/oh-my-zsh
     dest: "{{ oh_my_zsh_user_home }}/.oh-my-zsh"
   tags:
     - install
 
-- name: "Create new zshrc"
+- name: Create new zshrc
   copy:
     src: "{{ oh_my_zsh_user_home }}/.oh-my-zsh/templates/zshrc.zsh-template"
     dest: "{{ oh_my_zsh_user_home }}/.zshrc"
   tags:
     - configure
 
-- name: "Switch to shell to zsh"
+- name: Switch to shell to zsh
   user:
     name: "{{ oh_my_zsh_user }}"
     shell: /usr/bin/zsh
